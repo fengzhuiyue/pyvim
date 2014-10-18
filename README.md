@@ -18,7 +18,10 @@ Then edit your .vimrc file,save it.Run this in vim:
 ```  
 
 ##YouCompleteMe  
-  
+
+Use [YouCompleteMe](https://github.com/Valloric/YouCompleteMe),it is more powerful  
+than python-mode  
+
 After install plugins,you may see this error:  
   
 > ycm_client_support.[so|pyd|dll] and ycm_core.[so|pyd|dll] not detected;  
