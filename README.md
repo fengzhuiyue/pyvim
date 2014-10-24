@@ -43,4 +43,10 @@ $ cd ~/.vim/bundle/YouCompleteMe
 $ sudo sh install.sh  
 ```  
 
+3. install ctags  
+
+```bash
+$ sudo apt-get install ctags  
+```  
+
 ###Threre are no best vimrc,but you can make it better for youself!

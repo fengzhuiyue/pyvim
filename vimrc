@@ -34,6 +34,8 @@ Bundle 'docunext/closetag.vim'
 Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Bundle 'scrooloose/nerdtree'
 
+Bundle 'taglist.vim'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -93,3 +95,11 @@ let g:pymode_rope_complete_on_dot = 0
 "dont show preview window
 set completeopt-=preview
 let g:ycm_add_preview_to_completeopt = 0
+
+"for taglist
+let Tlist_Show_One_File=1
+let Tlist_Exit_OnlyWindow=1
+let Tlist_Use_Left_Window = 1 
+let Tlist_Ctags_Cmd = '/usr/bin/ctags'
+let Tlist_Auto_Open=1 
+nmap tl :Tlist<cr>
