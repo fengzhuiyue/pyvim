@@ -34,6 +34,7 @@ Please install YouCompeteMe is this way:
 ```bash  
 $ sudo apt-get install python-dev  
 $ sudo apt-get install CMake  
+$ sudo apt-get install g++  
 ```
 
 2. install YouCompleteMe  

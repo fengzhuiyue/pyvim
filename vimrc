@@ -18,23 +18,18 @@ Bundle 'Lokaltog/vim-distinguished'
 Bundle 'tomasr/molokai'
 
 " Syntax and language improvements.
-Bundle 'helino/vim-json'
-Bundle 'mustache/vim-mode'
 Bundle 'tpope/vim-markdown'
 Bundle 'klen/python-mode'
-Bundle 'scrooloose/syntastic'
 Bundle 'Glench/Vim-Jinja2-Syntax'
-Bundle 'jelera/vim-javascript-syntax'
 
 "auto complete
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'Raimondi/delimitMate'
-Bundle 'docunext/closetag.vim'
 
-Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Bundle 'scrooloose/nerdtree'
-
 Bundle 'taglist.vim'
+
+Bundle 'bling/vim-airline'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -79,7 +74,7 @@ set cmdheight=2
 
 "NERDTree setting
 "open a NERDTree automatically when vim starts up
-"autocmd vimenter * NERDTree
+autocmd vimenter * NERDTree
 
 "close vim if the only window left open is a NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
@@ -99,7 +94,7 @@ let g:ycm_add_preview_to_completeopt = 0
 "for taglist
 let Tlist_Show_One_File=1
 let Tlist_Exit_OnlyWindow=1
-let Tlist_Use_Left_Window = 1 
+let Tlist_Use_Right_Window = 1 
 let Tlist_Ctags_Cmd = '/usr/bin/ctags'
-let Tlist_Auto_Open=1 
+let Tlist_Auto_Open=0 
 nmap tl :Tlist<cr>
